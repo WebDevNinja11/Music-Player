@@ -1,0 +1,60 @@
+.track{
+display:inline-flex;
+height:250px;
+width:250px;
+background:radial-gradient(red,blue);
+padding:3px;
+}
+
+#topbar{
+    position:absolute;
+    display: inline-flex;
+    width:100%;
+    height:100px;
+    background-color: rgb(15,15,15);
+    justify-content: center;
+    align-items: center;
+    
+}
+.bar{
+    position:sticky;
+    height:100px;
+    background:grey;
+    width:fit-content;
+}
+body{
+    background:#242424;
+    margin:0;
+}
+h2{
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    color:white;
+    background:#242424;
+    outline-color: transparent;
+    position:relative;
+    border-color: transparent;
+    border-radius:5px;
+    font-size:14px;
+    height:50px;
+    width:100px;
+    margin:5px;
+}
+button::after,button::before{
+    content:'';
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:radial-gradient(red,blue,purple);
+    z-index:-1;
+    left:50%;
+    top:50%;
+    translate: -50% -50%;
+    padding:3px;
+    border-radius:5px;
+}
+button::before{
+    filter:blur(2px)
+}
