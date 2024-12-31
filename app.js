@@ -146,9 +146,7 @@ function playTrack(artistIndex, trackIndex) {
     currentTrackIndex = trackIndex;
     currentArtistIndex = artistIndex;
 }
-document.getElementById('play-pause-button').onclick = () => {
-    togglePlayPause()
-}
+
 // Toggle Menu visibility
 document.getElementById('menu-toggle-button').addEventListener('click', () => {
     const menu = document.getElementById('menu');
