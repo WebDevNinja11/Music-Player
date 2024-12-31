@@ -180,6 +180,6 @@ function appendArtistsToMenu() {
     });
 }
 const playbtn = document.getElementById("play-pause-button");
-playbtn.onclick = () => {togglePlayPause()};
+
 // Initialize the page
 appendArtistsToMenu();
