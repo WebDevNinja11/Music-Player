@@ -179,7 +179,6 @@ function appendArtistsToMenu() {
         menu.appendChild(dropdown);
     });
 }
-const playbtn = document.getElementById("play-pause-button");
 
 // Initialize the page
 appendArtistsToMenu();
