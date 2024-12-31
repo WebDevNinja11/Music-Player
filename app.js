@@ -119,6 +119,20 @@ const artists = [
 let currentTrackIndex = null;
 let currentArtistIndex = null;
 
+// Function to toggle play and pause
+function togglePlayPause() {
+    if (audio.paused) {
+        audio.play();  // Play the audio if it's paused
+        document.getElementById('play-pause-button').textContent = "⏸️";  // Change button to pause
+    } else {
+        audio.pause();  // Pause the audio if it's playing
+        document.getElementById('play-pause-button').textContent = "▶️";  // Change button to play
+    }
+}
+
+// Add an event listener for the play/pause button
+document.getElementById('play-pause-button').addEventListener('click', togglePlayPause);
+
 // Function to play selected track
 function playTrack(artistIndex, trackIndex) {
     const track = artists[artistIndex].tracks[trackIndex]; // Get the track from the selected artist
@@ -126,8 +140,8 @@ function playTrack(artistIndex, trackIndex) {
     document.getElementById('track-img').src = track.img;
     document.getElementById('track-name').textContent = track.name;
     document.getElementById('track-author').textContent = track.author;
-    audio.play();
-    document.getElementById('play-pause-button').textContent = "⏸️"; // Change to Pause
+    audio.play();  // Play the track immediately
+    document.getElementById('play-pause-button').textContent = "⏸️";  // Change to Pause
     currentTrackIndex = trackIndex;
     currentArtistIndex = artistIndex;
 }
