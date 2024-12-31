@@ -1,4 +1,4 @@
-# Update 1.2[BETA]
+# Update 1.2 [Released]
 
 Added Features and Changes:
 
@@ -7,6 +7,3 @@ Added Features and Changes:
 - New Designs
 - Made w Love for all of you guys :)
 
-currently fixing:
-- bugs
-- Good night and happy early new year!
