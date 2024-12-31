@@ -1,4 +1,4 @@
-# Update 1.2
+# Update 1.2[BETA]
 
 Added Features and Changes:
 
