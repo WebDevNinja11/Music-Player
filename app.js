@@ -114,12 +114,6 @@ const artists = [
         ]
     }
 ];
-
-// Initialize current track index
-let currentTrackIndex = null;
-let currentArtistIndex = null;
-let playing = false;
-// Function to toggle play and pause
 function togglePlayPause() {
     if (audio.paused) {
         audio.play();  // Play the audio if it's paused
@@ -129,9 +123,9 @@ function togglePlayPause() {
         document.getElementById('play-pause-button').textContent = "▶️";  // Change button to play
     }
 }
-
-// Add an event listener for the play/pause button
-document.getElementById('play-pause-button').addEventListener('click', togglePlayPause);
+// Initialize current track index
+let currentTrackIndex = null;
+let currentArtistIndex = null;
 
 // Function to play selected track
 function playTrack(artistIndex, trackIndex) {
@@ -140,9 +134,8 @@ function playTrack(artistIndex, trackIndex) {
     document.getElementById('track-img').src = track.img;
     document.getElementById('track-name').textContent = track.name;
     document.getElementById('track-author').textContent = track.author;
-    audio.play();  // Play the track immediately
-    playing = true;
-    document.getElementById('play-pause-button').textContent = "⏸️";  // Change to Pause
+    audio.play();
+    document.getElementById('play-pause-button').textContent = "⏸️"; // Change to Pause
     currentTrackIndex = trackIndex;
     currentArtistIndex = artistIndex;
 }
@@ -172,8 +165,7 @@ function appendArtistsToMenu() {
             const trackButton = document.createElement('button');
             trackButton.textContent = track.name;
             trackButton.style.fontSize = '20px';
-            trackButton.onclick = () => playTrack(artistIndex,trackIndex);
-            
+            trackButton.onclick = () => playTrack(artistIndex, trackIndex);
             dropdown.appendChild(trackButton);
         });
 
