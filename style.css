@@ -1,60 +1,97 @@
-.track{
-display:inline-flex;
-height:250px;
-width:250px;
-background:radial-gradient(red,blue);
-padding:3px;
+/* Basic styling for the player */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
-#topbar{
-    position:absolute;
-    display: inline-flex;
-    width:100%;
-    height:100px;
-    background-color: rgb(15,15,15);
+#player-controls {
+    display: flex;
     justify-content: center;
     align-items: center;
-    
+    padding: 20px;
+    background-color: #333;
 }
-.bar{
-    position:sticky;
-    height:100px;
-    background:grey;
-    width:fit-content;
+
+.control-button {
+    background-color: #444;
+    color: white;
+    border: none;
+    font-size: 2em;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-body{
-    background:#242424;
-    margin:0;
+
+.control-button:hover {
+    background-color: #555;
 }
-h2{
-    color:white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+#track-info {
+    text-align: center;
+    margin-top: 30px;
 }
-button{
-    color:white;
-    background:#242424;
-    outline-color: transparent;
-    position:relative;
-    border-color: transparent;
-    border-radius:5px;
-    font-size:14px;
-    height:50px;
-    width:100px;
-    margin:5px;
+
+#track-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
 }
-button::after,button::before{
-    content:'';
-    position:absolute;
-    height:100%;
-    width:100%;
-    background:radial-gradient(red,blue,purple);
-    z-index:-1;
-    left:50%;
-    top:50%;
-    translate: -50% -50%;
-    padding:3px;
-    border-radius:5px;
+
+#track-name {
+    font-size: 1.5em;
+    margin-top: 10px;
 }
-button::before{
-    filter:blur(2px)
+
+#track-author {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+#menu-toggle-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#menu-toggle-button:hover {
+    background-color: #555;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: #333;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu button {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu button:hover {
+    background-color: #555;
 }
