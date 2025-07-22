@@ -164,7 +164,7 @@ function appendArtistsToMenu() {
         artist.tracks.forEach((track, trackIndex) => {
             const trackButton = document.createElement('button');
             trackButton.textContent = track.name;
-            trackButton.style.fontSize = '20px';
+            trackButton.style.fontSize = '10px';
             trackButton.onclick = () => playTrack(artistIndex, trackIndex);
             dropdown.appendChild(trackButton);
         });
