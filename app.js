@@ -19,7 +19,7 @@ const artists = [
         name: "Liana Flores",
         tracks: [
             {
-                name: "Rises the moon",
+                name: "Rises The Moon",
                 author: "Liana Flores",
                 mp3file: "./assets/audio/rises the moon.mp3",
                 img: "./assets/images/risesthemoon.jpg",
@@ -93,7 +93,7 @@ const artists = [
         name: "Passenger",
         tracks: [
             {
-                name: "Let her go",
+                name: "Let Her Go",
                 author: "Passenger",
                 mp3file: "./assets/audio/Let Her Go.mp3",
                 img: "./assets/images/passenger.jpg",
