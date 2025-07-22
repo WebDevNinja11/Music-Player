@@ -31,7 +31,7 @@ const artists = [
         name: "Hulvey & Forest Frank",
         tracks: [
             {
-                name: "No longer Bound",
+                name: "No Longer Bound",
                 author: "Hulvey & Forest Frank",
                 mp3file: "./assets/audio/no longer bound.mp3",
                 img: "./assets/images/notbound.jpg",
